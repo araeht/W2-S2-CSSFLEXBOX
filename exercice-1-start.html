@@ -3,28 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <style>
-
-      body{
+      body {
         margin: 0;
         padding: 0;
         background: pink;
+        display: flex;
+        justify-content: center;
       }
-  
-      .container {
-        height: 100vh;
-        background: greenyellow;
 
+      .container {
+        display: flex;
+        flex-direction: column;
+        background: greenyellow;
+        width: calc(100vw - 20em); 
+        height: 100vh;
+        gap: 1em;
+        box-sizing: border-box;
+        padding: 1em 0;
       }
 
       header,
       footer {
         background: grey;
+        height: 100px; 
       }
 
       main {
         background: grey;
+        flex-grow: 1;
+        display: flex;
+        
+        
       }
- 
     </style>
   </head>
   <body>
@@ -32,7 +42,6 @@
       <header>Header</header>
       <main>Main</main>
       <footer>Footer</footer>
-      </section>
     </div>
   </body>
 </html>
